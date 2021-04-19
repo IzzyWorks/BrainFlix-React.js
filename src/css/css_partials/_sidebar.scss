@@ -1,0 +1,60 @@
+.playlist {
+  &__gallery {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-top: 1rem;
+    @include tablet {
+      //   width: 30%;
+    }
+    @include desktop {
+      width: 40%;
+      border-left: solid 1px $mercury;
+    }
+  }
+  &__header {
+    font-size: 0.55rem;
+    color: $silver;
+    @include desktop {
+      margin-left: 1rem;
+    }
+  }
+  &__gallery-block {
+    display: flex;
+    flex-flow: column;
+    @include desktop {
+      max-width: $desktop-breakpoint;
+      margin: auto;
+    }
+  }
+  &__img-container {
+    display: flex;
+    flex-flow: row;
+    margin: 1.125rem 0rem 0rem 0rem;
+  }
+  &__img {
+    object-fit: cover;
+    height: 3.25rem;
+    width: 5.5rem;
+    border-radius: 5px;
+    @include desktop {
+      margin-left: 1rem;
+    }
+  }
+  &__img-container:hover {
+    filter: grayscale(100);
+    transition: 0.5s;
+  }
+  &__discription {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    max-width: 8rem;
+    margin: 0rem 0rem 0rem 0.75rem;
+  }
+  &__name {
+    font-size: 0.675rem;
+    font-weight: 100;
+    max-width: 9rem;
+    margin: 0.25rem 0rem 0rem 0.75rem;
+  }
+}

@@ -1,0 +1,28 @@
+.flex-columns {
+  display: flex;
+  flex-flow: column;
+  padding: 0 0.5rem;
+  @include desktop {
+    flex-flow: row;
+    margin: 0rem auto;
+    max-width: $desktop-breakpoint;
+  }
+  &__left {
+    background-color: $white;
+    padding: 0.625rem;
+    @include desktop {
+      width: 75%;
+      margin: 0rem auto;
+      max-width: $desktop-breakpoint;
+    }
+  }
+  &__right {
+    background-color: $white;
+    padding: 0.625rem;
+    @include desktop {
+      width: 25%;
+      margin: 0rem auto;
+      max-width: $desktop-breakpoint;
+    }
+  }
+}

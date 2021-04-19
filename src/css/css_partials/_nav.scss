@@ -1,0 +1,115 @@
+.nav {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  @include tablet {
+    height: 80px;
+    justify-content: space-between;
+    flex-flow: row;
+    padding: 0rem 1.25rem 0rem 1.25rem;
+    // align-content: flex-end;
+  }
+  @include desktop {
+    max-width: $desktop-breakpoint;
+  }
+  &__container {
+    background-color: $white;
+    width: 100%;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.65rem;
+    width: 100%;
+    @include tablet {
+      padding-top: unset;
+      width: auto;
+    }
+  }
+  &__functions {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @include tablet {
+      flex-flow: row;
+      justify-content: flex-end;
+    }
+  }
+  &__search--block {
+    display: flex;
+    width: 100vw;
+    padding: 0rem 0.5rem;
+    align-items: center;
+    @include tablet {
+      width: 13.75rem;
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    font-family: "AvenirNext LT Pro", Roboto;
+    color: $mercury;
+    border: solid 1px $mercury;
+    font-size: 0.75rem;
+    padding-left: 1.875rem;
+    height: 2.25rem;
+    border-radius: 4px;
+    margin: 0.35rem 0rem;
+    background-color: $alabaster;
+  }
+  &__search--icon {
+    position: absolute;
+    margin-left: 0.65rem;
+    margin-top: 0.1125rem;
+    color: $silver;
+    pointer-events: none;
+  }
+  &__upload--block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 0.5rem;
+    @include tablet {
+      width: unset;
+      padding: unset;
+      justify-content: flex-end;
+    }
+  }
+  &__btn {
+    width: 100%;
+    height: 2.25rem;
+    background-color: $brainflix-blue;
+    color: $white;
+    font-size: 0.65rem;
+    line-height: 1.75rem;
+    border-radius: 0.2rem;
+    padding: 0rem 0.65rem;
+    margin-right: 0.75rem;
+    border: 0;
+    outline: none;
+    @include tablet {
+      width: unset;
+    }
+  }
+  &__btn--icon {
+    height: 14px;
+    position: relative;
+    top: 0.125rem;
+    right: 0.35rem;
+    // margin-right: 2rem;
+    color: $silver;
+    pointer-events: none;
+  }
+}
+.avatar {
+  background-color: gray;
+  padding-left: 2.35rem;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 3rem;
+}

@@ -1,0 +1,18 @@
+.video-player {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  @include tablet {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  @include desktop {
+    height: 540px;
+    width: 100%;
+    max-width: $desktop-breakpoint;
+    margin: auto;
+  }
+  &__container {
+    background-color: black;
+  }
+}
